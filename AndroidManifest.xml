@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cs597.bestdeal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WIFI" />
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  	<!-- External storage for caching. -->
+  	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  	<!-- My Location -->
+  	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  	<!-- Maps API needs OpenGL ES 2.0. -->
+  	<uses-feature
+    	android:glEsVersion="0x00020000"
+    	android:required="true"/>
+
+    <permission android:name="com.cs597.bestdeal.READ" > </permission>
+    <permission android:name="com.cs597.bestdeal.WRITE" > </permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data 
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDC85uZ0-Ek-k1G1G9LoIRJerV5jeG_VGY"/>
+    	<meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    	
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".SignupActivity"
+            android:label="@string/title_activity_signup" >
+        </activity>
+
+        <provider
+            android:name=".providers.BestDealProvider"
+            android:authorities="com.cs597.bestdeal"
+            android:exported="true"
+            android:readPermission="com.cs597.bestdeal.READ"
+            android:writePermission="com.cs597.bestdeal.WRITE" />
+
+        <activity
+            android:name=".AddReviewActivity"
+            android:label="@string/title_activity_add_review" >
+        </activity>
+        <activity
+            android:name=".ReviewActivity"
+            android:label="@string/title_activity_review" >
+        </activity>
+        <activity
+            android:name=".EditReviewActivity"
+            android:label="@string/title_activity_edit_review" >
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home" >
+            <intent-filter>  
+                <action android:name="android.intent.action.SEARCH" />  
+            </intent-filter>  
+  
+            <meta-data  
+                android:name="android.app.searchable"  
+                android:resource="@xml/searchable" />  
+        </activity>
+        <activity
+            android:name=".LocationActivity"
+            android:label="@string/title_activity_location" >
+        </activity>
+        <activity
+            android:name=".ProductActivity"
+            android:label="@string/title_activity_product" >
+        </activity>
+        <activity
+            android:name=".HistoryActivity"
+            android:label="@string/title_activity_history" >
+        </activity>
+        <activity
+            android:name=".FirstActivity"
+            android:label="@string/title_activity_first" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

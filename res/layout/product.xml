@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/product_image" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="0.38"
+                android:id="@+id/product_name"
+                android:textSize="30dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="0.38"
+                android:id="@+id/product_price"
+                android:gravity="center"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/product_ratingBar" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/product_review_count"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/product_addreview_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addReview"
+            android:text="Write Review" />
+        
+        <Button
+            android:id="@+id/product_addFavorite_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addFavorite"
+            android:text="Add Favorite" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_review_listView" />
+        
+        <TextView
+ 		   android:id="@id/android:empty"
+  		   android:layout_width="match_parent" 
+ 		   android:layout_height="wrap_content"
+  		   android:text="@string/empty_review" />
+
+    </LinearLayout>
+
+</LinearLayout>

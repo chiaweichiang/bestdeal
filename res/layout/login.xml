@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/background4">
+
+    <TextView
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:text="Log in using your email address and password"
+        android:id="@+id/textView6"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.22"
+        android:gravity="center|bottom"
+        android:textColor="#ff000000" />
+
+    <EditText
+        android:id="@+id/login_email_editText"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="E-mail Address"
+        android:inputType="textEmailAddress"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#ff000000"
+        android:textColorHint="#ff000000">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/login_password_editText"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:password="true"
+        android:textColorHint="#ff000000" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:onClick="Login"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:text="Don&apos;t have a BestDeal account yet? Get one on seconds"
+        android:id="@+id/textView7"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center|bottom"
+        android:layout_weight="0.21"
+        android:textColor="#ff000000"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/signup_button1"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:onClick="Signup"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>

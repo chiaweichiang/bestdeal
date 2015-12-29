@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="item_title">
+        <item>Home</item>
+        <item>Favorite</item>
+        <item>About Us</item>
+    </string-array>
+    
+    <integer-array name="item_icon_res">
+        <item>@drawable/ic_drawer_home</item>
+        <item>@drawable/ic_drawer_collect</item>
+        <item>@drawable/ic_drawer_follow</item>
+    </integer-array>
+    
+    <string-array name="spinnername">
+        <item>Best</item>
+        <item>Cheapest </item>
+        <item>Nearest</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bestdeal</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="signup_text">Do not have a BestDeal account yet? Get one on seconds.</string>
+    <string name="login_text">Log in using your email address and password</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_add_review">Write Review</string>
+    <string name="title_activity_review">Review</string>
+    <string name="title_activity_edit_review">EditReviewActivity</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="searchHint"> Search for product</string>
+    <string name="empty_search"> Search for product</string>
+    <string name="empty_review"> There is no review. Go and add a new one. </string>
+    <string name="empty_favorite"> There is no favorite. Go and add a new one.</string>
+    <string name="empty_history"> There is no history.</string>
+    
+
+    <string-array name="sections">
+        <item>Home</item>
+        <item>About Me</item>
+        <item>Favorites</item>
+        <item>About Us</item>
+    </string-array>
+    <string-array name="section_titles">
+        <item>Home</item>
+        <item>About Me</item>
+        <item>Favorites</item>
+        <item>About Us</item>
+    </string-array>
+    <string-array name="sections_icons">
+        <item>@android:drawable/ic_delete</item>
+        <item>@android:drawable/ic_dialog_alert</item>
+        <item>@android:drawable/ic_btn_speak_now</item>
+        <item>@android:drawable/ic_btn_speak_now</item>
+    </string-array>
+    <string-array name="home_title">
+        <item>Nearby Store</item>
+        <item>Search</item>
+        <item>Featured</item>
+        <item>Scan</item>
+    </string-array>
+    <string-array name="home_icons">
+        <item>@android:drawable/ic_delete</item>
+        <item>@android:drawable/ic_dialog_alert</item>
+        <item>@android:drawable/ic_btn_speak_now</item>
+        <item>@android:drawable/ic_btn_speak_now</item>
+    </string-array>
+
+    <string name="title_activity_location">Location</string>
+    <string name="title_activity_product">Product</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_favorite">FavoriteActivity</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="title_activity_first">Best Deal</string>
+
+</resources>

@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <SearchView
+        android:id="@+id/search_searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginTop="5dp" >
+    </SearchView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <CheckBox
+            android:id="@+id/search_online_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Online" />
+
+        <CheckBox
+            android:id="@+id/search_instore_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:checked="true"
+            android:text="In-store" />
+
+        <Spinner
+            android:id="@+id/search_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/search_result_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+    
+    <TextView
+    android:id="@id/android:empty"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:text="@string/empty_search" />
+
+</LinearLayout>
